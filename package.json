@@ -2,9 +2,17 @@
   "name": "@matera/root",
   "private": true,
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "turbo": "^1.1.10"
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{jsx,js,md}\""
+  }
 }
