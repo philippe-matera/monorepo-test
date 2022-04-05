@@ -1,0 +1,149 @@
+{
+  "add_button": "Hinzufügen",
+  "address_input": {
+    "address": "Anschrift",
+    "address_city": "Gemeinde",
+    "address_complement": "Adresszusatz (Gebäude, Etage, Wohnung...)",
+    "address_country": "Land",
+    "address_street": "Nummer und Straße",
+    "address_zipcode": "Postleitzahl",
+    "cant_find_address": "Ich kann meine Anschrift nicht finden!",
+    "loading": "Suche läuft"
+  },
+  "and": "und",
+  "browse_button": "Navigieren",
+  "cancel_button": "Entfernen",
+  "cancel_confirm": "Abbrechen",
+  "change_order_button": "Verschieben",
+  "change_page_button": {
+    "left": "Vorherige Seite",
+    "right": "Nächste Seite"
+  },
+  "change_visibility_button": "Sichtbarkeit ändern",
+  "close_button": "Schließen",
+  "confirm": "OK",
+  "confirm_button": "Akzeptieren",
+  "contact_button": "Kontaktieren",
+  "country_select": {
+    "placeholder": "Land auswählen"
+  },
+  "csv": "Excel",
+  "cursor_navigator": {
+    "next": "Nächste Ergebnisse",
+    "previous": "Vorherige Ergebnisse"
+  },
+  "data_table": {
+    "csv_export": "Als Excel-Datei herunterladen",
+    "filter": "Filtern"
+  },
+  "date_picker": {
+    "hour": "Zeit",
+    "time": "Zeit"
+  },
+  "delete_button": {
+    "delete": "Löschen",
+    "delete_confirm": "Löschen"
+  },
+  "disable_button": "Deaktivieren",
+  "download_csv_button": "CSV herunterladen",
+  "download_file_button": "Datei herunterladen",
+  "download_pdf_button": "PDF herunterladen",
+  "dropzone": {
+    "active": {
+      "drop_file_here": "Legen Sie Ihre Datei hier ab, um sie zu übertragen"
+    },
+    "ctas": {
+      "choose_file": {
+        "multiple": "Dateien auswählen",
+        "single": "Eine Datei auswählen"
+      }
+    },
+    "drag_file_here": {
+      "multiple": "Legen Sie die Dateien hier ab",
+      "single": "Legen Sie eine Datei hier ab"
+    },
+    "file_sizes": {
+      "B": "Bytes",
+      "KB": "KB",
+      "MB": "MB"
+    },
+    "multiple": {
+      "errors": {
+        "format": "Die Dateien müssen eines der folgenden Formate haben: {{formats_list}}",
+        "size": "Die Dateien müssen kleiner als ‪{{max}}‬ sein"
+      }
+    },
+    "restrictions": "{{max}} Maximum im Format {{formats_list}}",
+    "simple": {
+      "errors": {
+        "format": "Die Datei muss eines der folgenden Formate haben: {{formats_list}}",
+        "size": "Die Datei muss kleiner als ‪{{max}}‬ sein"
+      }
+    }
+  },
+  "edit_button": "Ändern",
+  "emoji_button": "Emoji hinzufügen",
+  "emoji_picker": {
+    "categories": {
+      "activity": "Aktivitäten",
+      "flags": "Flaggen",
+      "foods": "Essen",
+      "nature": "Tiere und Natur",
+      "objects": "Objekte",
+      "people": "Smileys",
+      "places": "Reisen",
+      "recent": "Aktuell",
+      "search": "Suchergebnisse",
+      "symbols": "Symbole"
+    },
+    "not_found": "Keine Ergebnisse",
+    "search": "Suchen...",
+    "title": "Wählen Sie ein Emoji aus"
+  },
+  "enable_button": "Aktivieren",
+  "error_count": "Bitte überprüfen Sie Ihre Eingabe, es gibt einen Fehler in ‪einem ‬Feld",
+  "error_count_plural": "Bitte überprüfen Sie Ihre Eingabe, es gibt einen Fehler in ‪{{count}}‬Feldern",
+  "grab_button": "Verschieben",
+  "label_optional": "Optional",
+  "like_button": "Gefällt mir",
+  "new_folder_button": "Neuer Ordner",
+  "notification_button": "Benachrichtigungen",
+  "numeric_input": {
+    "decimal_separator": ",",
+    "thousand_separator": " "
+  },
+  "or": "oder",
+  "order_button": "Reihenfolge ändern",
+  "pdf": "PDF",
+  "phone_number_input": {
+    "invalid": "Diese Nummer ist ungültig"
+  },
+  "radio_boolean": {
+    "no": "Nein",
+    "yes": "Ja"
+  },
+  "retry_button": "Erneut versuchen",
+  "search": "Suchen",
+  "search_button": "Suchen",
+  "search_input": "Suchen",
+  "select": {
+    "no_result": "Keine Ergebnisse"
+  },
+  "toggle_sort_direction_button": "Sortierreihenfolge ändern",
+  "undo_button": "Entfernen",
+  "upload_button": "Herunterladen",
+  "yes_no_type_picker": {
+    "no": "Nein",
+    "yes": "Ja"
+  },
+  "zoom_button": {
+    "in": "Zoomen",
+    "out": "Zoom aufheben"
+  },
+  "yup": {
+    "string": {
+      "phone_number": "Geben Sie eine gültige Telefonnummer ein",
+      "url": "Geben Sie eine gültige Website ein (Beispiel: matera.eu)"
+    }
+  }
+}
