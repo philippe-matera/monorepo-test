@@ -6,6 +6,7 @@ const { getLoader, loaderByName } = require("@craco/craco");
 
 const packages = [];
 packages.push(path.join(__dirname, "../../packages/test-common"));
+packages.push(path.join(__dirname, "../../packages/utils"));
 
 module.exports = {
   webpack: {
