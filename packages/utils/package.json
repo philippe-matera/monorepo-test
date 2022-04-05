@@ -1,0 +1,110 @@
+{
+  "name": "@matera-tech/utils",
+  "version": "3.0.10",
+  "sideEffects": false,
+  "private": false,
+  "description": "Matera - Shared utils",
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env",
+      "@babel/preset-flow",
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      [
+        "module-resolver",
+        {
+          "root": [
+            "./src"
+          ]
+        }
+      ]
+    ]
+  },
+  "main": "./src/index.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@matera-tech"
+  },
+  "scripts": {
+    "build": "yarn install --force && rm -rf dist && mkdir dist && tsc && babel ./src -d dist --extensions '.ts' --copy-files",
+    "lint": "./node_modules/eslint/bin/eslint.js src/ --ext .js,.jsx --fix",
+    "precommit": "lint-staged",
+    "dev": "babel ./src -d dist --extensions '.tsx,.ts' --copy-files --watch",
+    "ts-check": "tsc -p ./ --noemit",
+    "test": "jest --bail",
+    "lerna-build-push": "cd .. && git add . && git commit --allow-empty -m \"lerna build & release\" && git push -f",
+    "update-master": "git checkout desktop && git pull && git checkout utils && git pull && git checkout master && git pull && git merge desktop && git push && git merge utils && git push",
+    "release": "yarn update-master && npx lerna run --concurrency 1 --stream build && yarn lerna-build-push && npx lerna publish && yarn update-branches",
+    "update-branches": "git checkout desktop && git merge master && git push && git checkout utils && git merge master && git push"
+  },
+  "lint-staged": {
+    "**/underscore/*.js": "jest --bail --findRelatedTests",
+    "*.!(spec.){js,jsx}": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matera-tech/npm-packages.git"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "peerDependencies": {
+    "react": ">=17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.16.0",
+    "@babel/core": "7.16.0",
+    "@babel/preset-env": "7.16.0",
+    "@babel/preset-flow": "7.16.0",
+    "@babel/preset-react": "7.16.0",
+    "@babel/preset-typescript": "7.16.0",
+    "@types/react": "17.0.34",
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
+    "babel-eslint": "10.1.0",
+    "babel-plugin-module-resolver": "4.1.0",
+    "danger": "10.7.1",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-babel-module": "5.3.1",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.26.1",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "husky": "7.0.4",
+    "jest": "27.3.1",
+    "lint-staged": "11.2.6",
+    "prettier": "2.4.1",
+    "react": "17.0.2",
+    "react-query": "3.27.0",
+    "typescript": "3.9.10"
+  },
+  "author": "Matera",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^0.21.2",
+    "danger-plugin-code-coverage": "^1.1.7",
+    "date-fns": "^2.25.0",
+    "i18next": "^20.0.0",
+    "react-i18next": "^11.7.2"
+  },
+  "gitHead": "2b65508d0787858cb3a59653ce5df732e5532cdb"
+}
